@@ -1,0 +1,13 @@
+## Read input as specified in the question.
+## Print output as specified in the question.
+def power_r(x,n):
+    if n == 0:
+        return 1
+    return (x * power_r(x,n-1))
+    
+
+li=input().split()
+x=int(li[0])
+n=int(li[1])
+output=power_r(x,n)
+print(output)
