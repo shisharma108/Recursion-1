@@ -1,0 +1,12 @@
+## Read input as specified in the question.
+## Print output as specified in the question.
+def power_of(x,n):
+    if n==0:
+        return 1
+    smalloutput = power_of(x,n-1)
+    output=smalloutput * x
+    return output
+s=input().split()
+x,n = int(s[0]),int(s[1])
+print(power_of(x,n))
+
